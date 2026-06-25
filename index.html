@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aria Vance is a professional landscape and fine art portrait photographer. Discover capturing light, shadow, and nature's raw beauty.">
+    <title>Aria Vance | Photography Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">ARIA<span>VANCE</span></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('assets/hero_bg.png');">
+        <div class="hero-content">
+            <h1 class="hero-title">CAPTURING THE<br>ESSENCE OF TIME</h1>
+            <p class="hero-subtitle">Fine Art Landscape & Portrait Photography</p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn btn-primary">Explore Gallery</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#gallery" aria-label="Scroll Down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">PORTFOLIO</h2>
+                <div class="accent-line"></div>
+                <p class="section-desc">A curated collection of moments frozen in light and shadow. Each photograph tells a unique story of place, emotion, and atmosphere.</p>
+            </div>
+
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">ALL WORKS</button>
+                <button class="filter-btn" data-filter="landscape">LANDSCAPES</button>
+                <button class="filter-btn" data-filter="portrait">PORTRAITURE</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Landscape Item 1 -->
+                <div class="gallery-item show" data-category="landscape" data-index="0">
+                    <div class="image-wrapper">
+                        <img src="assets/landscape_1.png" alt="Mystical foggy forest path at sunrise" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <span class="photo-category">Landscape</span>
+                                <h3 class="photo-title">Ethereal Woodlands</h3>
+                                <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait Item 1 -->
+                <div class="gallery-item show" data-category="portrait" data-index="1">
+                    <div class="image-wrapper">
+                        <img src="assets/portrait_1.png" alt="Dramatic studio portrait of a woman" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <span class="photo-category">Portraiture</span>
+                                <h3 class="photo-title">Shadows & Soul</h3>
+                                <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landscape Item 2 -->
+                <div class="gallery-item show" data-category="landscape" data-index="2">
+                    <div class="image-wrapper">
+                        <img src="assets/landscape_2.png" alt="Desert sand dunes under a starry twilight sky" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <span class="photo-category">Landscape</span>
+                                <h3 class="photo-title">Whispering Dunes</h3>
+                                <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait Item 2 -->
+                <div class="gallery-item show" data-category="portrait" data-index="3">
+                    <div class="image-wrapper">
+                        <img src="assets/portrait_2.png" alt="Candid portrait of a smiling man outdoors during golden hour" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <span class="photo-category">Portraiture</span>
+                                <h3 class="photo-title">Golden Hour Smile</h3>
+                                <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-image-side">
+                    <div class="profile-img-container">
+                        <img src="assets/profile.png" alt="Aria Vance Portrait" class="profile-img">
+                        <div class="profile-badge">
+                            <span class="badge-num">10+</span>
+                            <span class="badge-txt">Years Behind<br>the Lens</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-side">
+                    <h2 class="about-title">THE ARTIST BEHIND THE LENS</h2>
+                    <p class="about-intro">"Photography is not about documenting reality; it is about conveying how a specific place and time felt."</p>
+                    <p class="about-text">
+                        Hello, I'm Aria Vance. Based in the Pacific Northwest, I travel the world seeking instances where light and form align perfectly. My work combines fine art portraiture and dramatic landscape photography, exploring the interplay between human emotion and the vast, silent beauty of nature.
+                    </p>
+                    <p class="about-text">
+                        Every print is carefully crafted to represent the rich contrasts and atmospheric mood of the original scene. Thank you for viewing my world.
+                    </p>
+
+                    <!-- Gear Card -->
+                    <div class="gear-card">
+                        <h3 class="gear-title"><i class="fa-solid fa-camera"></i> THE GEAR I TRUST</h3>
+                        <ul class="gear-list">
+                            <li>
+                                <span class="gear-label">Camera Body</span>
+                                <span class="gear-val">Sony Alpha 7R V (61MP)</span>
+                            </li>
+                            <li>
+                                <span class="gear-label">Lenses</span>
+                                <span class="gear-val">FE 24-70mm f/2.8 GM II & FE 85mm f/1.2 GM</span>
+                            </li>
+                            <li>
+                                <span class="gear-label">Tripod / Filters</span>
+                                <span class="gear-val">Gitzo Mountaineer & PolarPro QuartzLine ND</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info-side">
+                    <h2 class="contact-title">LET'S CREATE SOMETHING BEAUTIFUL</h2>
+                    <p class="contact-desc">Whether you want to purchase a fine art print, collaborate on a portrait session, or simply discuss the art of photography, I'd love to hear from you.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email Me</h4>
+                                <a href="mailto:hello@ariavance.com">hello@ariavance.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-details">
+                                <h4>Based In</h4>
+                                <p>Seattle, WA, USA (Available Worldwide)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://500px.com" target="_blank" rel="noopener" aria-label="500px"><i class="fa-brands fa-500px"></i></a>
+                        <a href="https://vsco.co" target="_blank" rel="noopener" aria-label="VSCO"><i class="fa-solid fa-camera-retro"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <div class="form-container">
+                        <form id="contact-form" autocomplete="off">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required placeholder=" ">
+                                    <label for="email">Email Address</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                            </button>
+                        </form>
+                        <div class="form-feedback" id="form-feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Aria Vance Photography. All Rights Reserved. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous Image"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <div class="lightbox-caption">
+                <span class="lightbox-category" id="lightbox-category">Category</span>
+                <h4 class="lightbox-title" id="lightbox-title">Title</h4>
+            </div>
+        </div>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Next Image"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
